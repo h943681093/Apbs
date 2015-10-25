@@ -1,0 +1,26 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".MainActivity">
+
+    <com.esri.android.map.MapView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        mapoptions.MapType="Topo"
+        mapoptions.ZoomLevel="13"
+        mapoptions.center="30.251017, 120.171837" />
+    <TextView
+        android:id="@+id/carInfos"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="carinfos"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#000000"
+        android:padding="5dp"
+        />
+    <include layout="@layout/alltasks"/>
+
+
+</RelativeLayout>

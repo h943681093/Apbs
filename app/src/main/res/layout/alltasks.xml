@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost
+    android:id="@+id/mytab"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="255dp" android:layout_height="405dp"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TabWidget
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@android:id/tabs"
+            ></TabWidget>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@android:id/tabcontent"
+            >
+                <LinearLayout
+                    android:id="@+id/firstTab"
+                    android:layout_width="250dp"
+                    android:layout_height="400dp"
+                    android:orientation="vertical">
+                    <com.astuetz.RefreshableListView
+                        android:layout_width="250dp"
+                        android:layout_height="400dp"
+                        android:background="@drawable/lines_cardinbg"
+                        android:id="@+id/nlistview" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/secondTab"
+                    android:layout_width="250dp"
+                    android:layout_height="400dp"
+                    android:orientation="vertical"
+                    >
+                    <com.astuetz.RefreshableListView
+                        android:layout_width="250dp"
+                        android:layout_height="400dp"
+                        android:background="@drawable/lines_cardinbg"
+                        android:id="@+id/ylistview" />
+                </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>
